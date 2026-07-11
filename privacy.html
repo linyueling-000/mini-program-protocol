@@ -10,9 +10,10 @@
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
     background: #f5f7fa;
     color: #2c3e50;
-    line-height: 1.95;
+    line-height: 1.9;
     font-size: 15px;
-    padding: 20px 18px 60px;
+    padding: 20px 16px 60px;
+    -webkit-text-size-adjust: 100%;
   }
   .wrap { max-width: 720px; margin: 0 auto; }
   h1 {
@@ -26,58 +27,125 @@
     text-align: center;
     color: #95a5a6;
     font-size: 13px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
   h2 {
     font-size: 16px;
     color: #1a252f;
-    margin: 22px 0 10px;
+    margin: 24px 0 10px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 4px solid #3498db;
+  }
+  h3 {
+    font-size: 14px;
+    color: #34495e;
+    margin: 12px 0 6px;
     font-weight: bold;
   }
-  p { margin-bottom: 8px; text-align: justify; }
+  p { margin-bottom: 10px; text-align: justify; }
+  ul, ol { margin: 8px 0 12px 22px; }
+  li { margin-bottom: 6px; }
+  strong { color: #1a252f; }
   .box {
     background: #fff;
-    border-radius: 10px;
-    padding: 20px 18px;
+    border-radius: 12px;
+    padding: 22px 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     margin-bottom: 14px;
   }
+  .lead {
+    background: #ecf3fb;
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #1a4d80;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .safe {
+    background: #fef9e7;
+    border-left: 3px solid #f1c40f;
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: #7d6608;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .contact { color: #2c3e50; font-weight: bold; }
   .footer-tip {
     text-align: center;
     color: #95a5a6;
     font-size: 12px;
-    margin-top: 28px;
+    margin-top: 24px;
     padding: 14px 16px;
   }
-  .contact { color: #2c3e50; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="box">
     <h1>隐私用户协议</h1>
-    <div class="date">更新日期：2026年7月11日</div>
+    <div class="date">最后更新：2026 年 7 月 11 日</div>
+
+    <div class="lead">
+      您的隐私对我们很重要。本游戏由个人开发者独立开发与运营，遵循「最小必要」原则收集信息，绝不会向任何服务器上传您的个人身份信息。
+    </div>
 
     <h2>一、我们收集的信息</h2>
-    <p>本小程序为完全免费的纯休闲类单机应用，仅在您主动操作时收集以下信息：</p>
-    <p>1.您的设备屏幕信息（屏幕宽度、高度、像素比、平台类型，用于适配显示，匿名化处理）；2.本地缓存（协议同意状态、最高分、错误日志，用于记忆您的设置与本地排错）。</p>
-    <p>本小程序不收集您的个人身份信息（包括真实姓名、手机号、身份证、地理位置、微信 OpenID、UnionID 等），也不进行任何独立的实名认证流程。</p>
+    <p>本游戏为完全免费的单机休闲类微信小游戏。我们仅在您主动操作时收集实现游戏核心功能所必需的信息，且所有信息<strong>不向任何服务器上传</strong>，仅存储在您设备的本地缓存中。</p>
+
+    <h3>1. 设备信息</h3>
+    <p>当您首次启动游戏时，本游戏会获取您的设备屏幕信息（包括屏幕宽度、高度、像素比、平台类型），用于自适应游戏画面布局，确保不同机型上都有良好的视觉体验。该信息仅在您的设备本地使用。</p>
+
+    <h3>2. 本地缓存</h3>
+    <p>为了记住您的偏好设置，本游戏会在您设备的本地缓存中保存以下信息：</p>
+    <ul>
+      <li><strong>协议同意状态</strong>：避免您每次启动游戏都重复弹出协议弹窗；</li>
+      <li><strong>最高分记录</strong>：方便您在开始界面查看历史最佳成绩；</li>
+      <li><strong>错误日志</strong>：仅用于本地排查游戏运行过程中的异常情况。</li>
+    </ul>
+
+    <h3>3. 我们不收集的信息</h3>
+    <p>本游戏<strong>不收集您的个人身份信息</strong>，包括真实姓名、手机号、身份证号、地理位置、微信 OpenID、UnionID 等，也不进行任何独立的实名认证流程。游戏已接入微信平台适龄提示体系，由微信平台统一完成相关身份识别工作。</p>
+    <p>本游戏不申请或使用任何敏感权限，包括但不限于：摄像头、麦克风、相册、通讯录、短信、通话记录、定位等。</p>
 
     <h2>二、信息使用目的</h2>
-    <p>上述信息仅用于：1.为游戏画面提供屏幕尺寸适配；2.记住您是否已阅读并同意本协议及《用户服务协议》、保存您的最高分记录；3.本地错误排查（仅记录在本机，不会上传）。我们不会将您的信息用于其他用途，也不会出售、出租或共享给第三方。所有数据均不向任何服务器上传。</p>
+    <p>我们仅在为您提供并优化本游戏核心功能的范围内使用上述信息：</p>
+    <ol>
+      <li>根据您的设备屏幕尺寸，自适应游戏画布与方格布局；</li>
+      <li>记录您是否已阅读并同意本政策与《用户服务协议》；</li>
+      <li>保存您的最高分记录；</li>
+      <li>记录游戏运行过程中的异常日志，用于本地排查问题。</li>
+    </ol>
+    <p>我们<strong>绝不会</strong>将上述信息用于识别或追踪您的真实身份、用户画像、精准营销、广告推送、推广活动，或出售、出租、共享给任何第三方。</p>
 
     <h2>三、第三方服务</h2>
-    <p>本小程序使用了以下第三方服务：1.微信小游戏平台（运行环境与适龄提示体系）。本游戏不集成任何第三方 SDK（包括统计 SDK、广告 SDK、推送 SDK、社交分享 SDK 等），相关数据处理规则以微信官方《微信隐私保护指引》为准。</p>
+    <p>本游戏仅使用以下第三方平台服务：</p>
+    <ul>
+      <li><strong>微信小游戏平台</strong>：提供游戏运行环境、用户登录、适龄提示、防沉迷等基础能力。相关数据处理规则以微信官方《微信隐私保护指引》为准。</li>
+    </ul>
+    <p><strong>特别说明：</strong>本游戏<strong>不集成任何第三方 SDK</strong>（包括但不限于统计 SDK、广告 SDK、推送 SDK、社交分享 SDK、支付 SDK 等），您在使用本游戏时不会被任何第三方收集个人信息。</p>
 
     <h2>四、数据存储与安全</h2>
-    <p>协议同意状态与最高分仅存储在您的本地设备缓存中，不会上传至任何服务器。设备屏幕信息仅在游戏启动时获取一次，用于适配画面显示。由于信息仅存储于您个人设备本地，不涉及网络传输与云端存储，从根本上避免了网络窃取、中间人攻击、服务器入侵等常见的数据安全风险。</p>
+    <p>本游戏的全部数据均<strong>仅存储于您当前设备的本地缓存</strong>中，不会上传至开发者服务器，也不存在任何云端数据库或日志服务器。</p>
+    <p>由于数据不涉及网络传输与云端存储，从根本上避免了网络窃取、中间人攻击、服务器入侵等常见的数据安全风险。本地缓存数据将一直保留在您的设备上，直到您主动清除本游戏的小程序/小游戏缓存、卸载本游戏，或恢复出厂设置。</p>
+    <div class="safe">
+      💡 <strong>温馨提示：</strong>为保障您的设备安全，建议您设置解锁密码或生物识别；在转让、回收、维修设备前，先清除本游戏的本地缓存与数据。
+    </div>
 
     <h2>五、您的权利</h2>
-    <p>您可随时清除小游戏缓存以重置所有本地数据：在微信中长按本游戏图标 → 选择「删除」，或在微信中进入「我 → 设置 → 通用 → 存储空间 → 妙妙贪吃小蛇 → 清除数据」。如需注销微信授权，可在微信"设置-隐私-授权管理"中操作。</p>
+    <p>依据《中华人民共和国个人信息保护法》及相关法律法规，您对自己的本地缓存数据享有以下权利：</p>
+    <ol>
+      <li><strong>知情权与决定权</strong>：您有权了解本游戏收集了哪些信息，并自主决定是否同意本政策；</li>
+      <li><strong>访问与查询</strong>：您可通过微信「我 → 设置 → 通用 → 存储空间 → 妙妙贪吃小蛇」查看本游戏的本地数据；</li>
+      <li><strong>删除权</strong>：您可随时清除本地数据，方法为：长按本游戏图标选择「删除」，或进入微信「我 → 设置 → 通用 → 存储空间 → 妙妙贪吃小蛇 → 清除数据」；</li>
+      <li><strong>撤回同意</strong>：如您希望撤回对本政策的同意，可通过删除本游戏的方式实现。撤回后，您将无法继续使用本游戏。</li>
+    </ol>
+    <p>由于本游戏不收集您的姓名、身份证号等个人身份信息，因此无需您主动更正或补充信息。本游戏为纯单机游戏，不存在账号体系，您可通过清除本地缓存实现等同于「注销账号」的效果。</p>
 
     <h2>六、联系我们</h2>
-    <p>如您对本协议有疑问，可通过以下方式联系我们：</p>
-    <p><span class="contact">邮箱：824111316@qq.com</span></p>
+    <p>如您对本政策有任何疑问、建议或反馈，欢迎随时联系开发者：</p>
+    <p><span class="contact">📧 邮箱：824111316@qq.com</span></p>
   </div>
 
   <div class="footer-tip">内容仅为娱乐休闲参考，不具备现实指导意义</div>
